@@ -1,22 +1,22 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-primary">
   <div class="container">
-    <a class="navbar-brand" href="#">Game Night App</a>
+    <a class="navbar-brand" [routerLink]="['/home']">Game Night App</a>
 
     <ul *ngIf="loggedIn()" class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Episodes</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/episode']">Episode</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Documents</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/documents']">Documents</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Suspects</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/suspects']">Suspects</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Evidence</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/evidence']">Evidence</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Messages</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/messages']">Messages</a>
       </li>
     </ul>
 
